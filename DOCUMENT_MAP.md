@@ -72,5 +72,5 @@ The public source archive should exclude:
 `THIRD_PARTY_NOTICES.md` and directory-local licences govern upstream material.
 
 The designated rendered files are
-`output/pdf/bilateral-deficiency-regular-dim-v1.0.0-candidate.pdf` and
-`output/pdf/bilateral-deficiency-reproducibility-supplement-v1.0.0-candidate.pdf`.
+`output/pdf/bilateral-deficiency-regular-dim-v1.0.1-candidate.pdf` and
+`output/pdf/bilateral-deficiency-reproducibility-supplement-v1.0.1-candidate.pdf`.

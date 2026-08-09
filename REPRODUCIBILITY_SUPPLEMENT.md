@@ -9,7 +9,7 @@ translation, structural analysis, algebraic conformance benchmarks, three
 native- and Lean-checked finite threshold encodings, a parser-independent Lean
 terminal-signature lemma, and a connected-family generator
 
-**Candidate identity:** version 1.0.0-candidate,
+**Candidate identity:** version 1.0.1-candidate,
 <https://doi.org/10.5281/zenodo.21857209>, source at
 <https://github.com/ipitchford/bilateral-deficiency>
 

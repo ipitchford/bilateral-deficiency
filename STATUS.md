@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Package | *Bilateral Deficiency: Residual SAT Optimisation and Independent Domination in Regular-DIM Graphs* |
-| Release label | `v1.0.0-candidate` |
+| Release label | `v1.0.1-candidate` |
 | Release date | 2026-08-09 |
 | Scholarly attribution | Anonymous |
 | Scholarly status | Unrefereed Evidence Press candidate |

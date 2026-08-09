@@ -1,6 +1,6 @@
 {
   "schema": "evidence-press-assurance-v1",
-  "release_label": "v1.0.0-candidate",
+  "release_label": "v1.0.1-candidate",
   "release_doi": "10.5281/zenodo.21857209",
   "repository": "https://github.com/ipitchford/bilateral-deficiency",
   "evidence_press_url": "https://evidencepress.org/releases/bilateral-deficiency-regular-dim/",

@@ -25,6 +25,6 @@ test_lean_terminal_signature (test_workflows.WorkflowTests.test_lean_terminal_si
 test_threshold_compiler_preserves_frozen_zero_encoding (test_workflows.WorkflowTests.test_threshold_compiler_preserves_frozen_zero_encoding) ... ok
 
 ----------------------------------------------------------------------
-Ran 25 tests in 5.512s
+Ran 25 tests in 5.122s
 
 OK

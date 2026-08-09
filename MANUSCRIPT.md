@@ -2,7 +2,7 @@
 
 **Anonymous**  
 **Independent research release**  
-**Version 1.0.0-candidate | 9 August 2026**  
+**Version 1.0.1-candidate | 9 August 2026**<br>
 **DOI: 10.5281/zenodo.21857209**  
 **Unrefereed candidate; no journal submission or external specialist review has been undertaken**
 
@@ -1813,7 +1813,7 @@ receipts.
 
 The manuscript is accompanied by a reproducibility supplement and an artifact
 archive containing source code, indexed CNF instances, generated graph data,
-tests, and exact receipts. Version 1.0.0-candidate is archived at
+tests, and exact receipts. Version 1.0.1-candidate is archived at
 <https://doi.org/10.5281/zenodo.21857209>, with source at
 <https://github.com/ipitchford/bilateral-deficiency>. The motivating
 TxGraffiti release and its public repository are listed in Reference [1].

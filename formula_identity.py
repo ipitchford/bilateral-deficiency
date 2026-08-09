@@ -6,11 +6,24 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import shutil
 import subprocess
 import tempfile
 from pathlib import Path
 
 from bd_core import IndexedCNF, formula_graph, read_dimacs
+
+
+def nauty_tool(name: str) -> str:
+    """Resolve upstream and Debian/Ubuntu names for a nauty executable."""
+    for candidate in (name, f"nauty-{name}"):
+        executable = shutil.which(candidate)
+        if executable is not None:
+            return executable
+    raise RuntimeError(
+        f"nauty executable {name!r} was not found; install nauty and ensure "
+        f"either {name!r} or 'nauty-{name}' is on PATH"
+    )
 
 
 def adjacency_matrix_text(formula: IndexedCNF) -> str:
@@ -30,14 +43,14 @@ def canonical_graph6(formula: IndexedCNF, colored: bool) -> str:
         canonical = temporary_path / "canonical.g6"
         matrix.write_text(adjacency_matrix_text(formula), encoding="ascii")
         converted = subprocess.run(
-            ["amtog", "-q", str(matrix), str(graph6)],
+            [nauty_tool("amtog"), "-q", str(matrix), str(graph6)],
             text=True,
             capture_output=True,
             check=False,
         )
         if converted.returncode != 0:
             raise RuntimeError(converted.stderr)
-        command = ["labelg", "-q"]
+        command = [nauty_tool("labelg"), "-q"]
         if colored:
             colors = "a" * (2 * formula.variables) + "b" * len(formula.clauses)
             command.append(f"-f{colors}")

@@ -1,5 +1,13 @@
 # Release notes
 
+## v1.0.1-candidate — 2026-08-09
+
+Patch candidate superseding `v1.0.0-candidate`. The mathematical content and
+finite proof payload are unchanged. This version makes the nauty identity
+audit portable across upstream/Homebrew executable names and Debian/Ubuntu's
+`nauty-`-prefixed names, and installs the declared nauty dependency in GitHub
+Actions. The original candidate tag and release remain immutable for audit.
+
 ## v1.0.0-candidate — 2026-08-09
 
 Initial unrefereed Evidence Press child candidate of the TxGraffiti conjecture

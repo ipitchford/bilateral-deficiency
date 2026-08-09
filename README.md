@@ -13,7 +13,7 @@ semantics.
 
 ## Release anchors
 
-- Version: `1.0.0-candidate`
+- Version: `1.0.1-candidate`
 - DOI: <https://doi.org/10.5281/zenodo.21857209>
 - Source: <https://github.com/ipitchford/bilateral-deficiency>
 - Evidence Press: <https://evidencepress.org/releases/bilateral-deficiency-regular-dim/>
