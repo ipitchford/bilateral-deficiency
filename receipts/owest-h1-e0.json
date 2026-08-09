@@ -1,0 +1,35 @@
+{
+  "assurance_boundary": "The edge-cover amplifier is a written universal proof and the matching formula is a cited theorem. This receipt checks the declared finite syntax, counts, hashes, and connectivity.",
+  "beta": 9,
+  "canonical_expansions": 0,
+  "formula_audit": {
+    "connected_formula_graph": true,
+    "exact_322": true,
+    "proper": true,
+    "simple": true
+  },
+  "formula_clauses": 256,
+  "formula_graph_order": 640,
+  "formula_sha256": "63144989b35c4d3a798243cdeda6393682eabdd3dfbef032ef559d4ac4d8da7d",
+  "formula_variables": 192,
+  "gap": 9,
+  "gap_density": "9/640",
+  "independent_domination": 201,
+  "matching_value_boundary": "The matching number is theorem-derived from the O--West H_1 family; the generator audits structure but does not implement blossom.",
+  "minimum_maximal_matching": 192,
+  "owest_source_doi": "10.1002/jgt.20443",
+  "ratio": "67/64",
+  "schema": "bilateral-deficiency/owest-enforcer-amplifier/v1",
+  "skeleton_audit": {
+    "connected": true,
+    "cubic": true,
+    "edge_count": 24,
+    "simple": true
+  },
+  "skeleton_edge_cover": 9,
+  "skeleton_edges": 24,
+  "skeleton_matching_number": 7,
+  "skeleton_order": 16,
+  "source_enforcer": "sat2024_e322_enforcer.cnf",
+  "source_enforcer_sha256": "5b4c222ac60a2ec4f3773f8e2cb91366cb5295e11c7acc54438589d429401933"
+}

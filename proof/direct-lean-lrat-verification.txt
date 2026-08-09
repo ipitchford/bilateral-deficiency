@@ -1,0 +1,3 @@
+c parsed 731 variables and 9256 clauses
+c parsed 118497 LRAT actions
+s LEAN_LRAT_VERIFIED

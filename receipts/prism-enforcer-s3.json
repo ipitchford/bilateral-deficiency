@@ -1,0 +1,82 @@
+{
+  "assurance_boundary": "The family theorem is a written universal proof using the finite enforcer signature. This receipt checks the instantiated syntax, counts, hashes, and connectivity for the declared s.",
+  "audit": {
+    "connected_formula_graph": true,
+    "exact_322": true,
+    "proper": true,
+    "simple": true
+  },
+  "base_prism_edge_cover": 3,
+  "base_prism_edges": 9,
+  "base_prism_matching": 3,
+  "base_prism_vertices": 6,
+  "beta": 3,
+  "formula_clauses": 96,
+  "formula_graph_order": 240,
+  "formula_sha256": "f71ee183354263fbb2f0b58f1543c86fd1ec0c177c3d123de6dcaa7873da12e0",
+  "formula_variables": 72,
+  "gap": 3,
+  "gap_density": "1/80",
+  "independent_domination": 75,
+  "minimum_maximal_matching": 72,
+  "parameter_s": 3,
+  "proof_rule": "terminal min-plus reduction to minimum edge cover of C_s square K_2; rho=|V|-nu=2s-s=s",
+  "ratio": "25/24",
+  "schema": "bilateral-deficiency/prism-enforcer-amplifier/v1",
+  "source_doi": "10.4230/LIPIcs.SAT.2024.31",
+  "source_enforcer": "sat2024_e322_enforcer.cnf",
+  "source_enforcer_sha256": "5b4c222ac60a2ec4f3773f8e2cb91366cb5295e11c7acc54438589d429401933",
+  "terminal_signature": {
+    "assurance_boundary": "The signature is an exhaustive receipt over 3^n local assignments. The composition theorem is a written universal argument; this JSON does not by itself certify that theorem.",
+    "clauses": 10,
+    "closed_value": 0,
+    "closed_witness": "0*****1*",
+    "entries": [
+      {
+        "masks": [
+          0
+        ],
+        "states": "*",
+        "value": 1,
+        "witness": "*****010"
+      },
+      {
+        "masks": [
+          2
+        ],
+        "states": "*",
+        "value": 1,
+        "witness": "******10"
+      },
+      {
+        "masks": [
+          0
+        ],
+        "states": "0",
+        "value": 0,
+        "witness": "0*****1*"
+      },
+      {
+        "masks": [
+          0
+        ],
+        "states": "1",
+        "value": 1,
+        "witness": "1*****10"
+      }
+    ],
+    "input": "sat2024_e322_enforcer.cnf",
+    "input_sha256": "5b4c222ac60a2ec4f3773f8e2cb91366cb5295e11c7acc54438589d429401933",
+    "mask_legend": {
+      "0": "none",
+      "1": "positive",
+      "2": "negative",
+      "3": "both"
+    },
+    "schema": "bilateral-deficiency/terminal-signature/v1",
+    "terminals": [
+      1
+    ],
+    "variables": 8
+  }
+}

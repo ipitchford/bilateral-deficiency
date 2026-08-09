@@ -1,0 +1,13 @@
+{
+  "schema": "bilateral-deficiency/exhaustive-receipt/v1",
+  "input": "instances/txgraffiti_15_20.cnf",
+  "variables": 15,
+  "indexed_clauses": 20,
+  "partial_assignments": 14348907,
+  "bilateral_assignments": 939975,
+  "beta": 1,
+  "witness": "0000***********",
+  "spectrum": {"1": 101540, "2": 455099, "3": 318306, "4": 61402, "5": 3597, "6": 31},
+  "bilateral_by_unassigned": [32768, 68864, 105066, 131296, 141302, 134321, 114282, 87592, 60260, 36402, 18335, 7151, 1967, 338, 30, 1],
+  "minimum_residual_clauses_by_unassigned": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 20]
+}

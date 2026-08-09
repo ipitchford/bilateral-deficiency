@@ -1,0 +1,29 @@
+{
+  "assurance_boundary": "The SAT witness is checked against the independent Python semantics. The UNSAT status is a discovery result until a proof log is generated and independently checked.",
+  "audit": {
+    "connected_formula_graph": true,
+    "exact_322": true,
+    "proper": true,
+    "simple": true
+  },
+  "clauses": 40,
+  "elapsed_seconds": 682.780451,
+  "formula_sha256": "83fe2bf036979a45aaea5f186feaa05a44eb67a1b44883d9c1fae9e4f2c947b3",
+  "lower_encoding_sha256": "54493aeb68ecd3d276cbf73765ef6c727275fc71e7a84ad195cdb1d0d8830c9d",
+  "lower_solver_status": "UNSAT",
+  "lower_threshold": 0,
+  "schema": "bilateral-deficiency/connected-switch-search/v1",
+  "switch": {
+    "left_clause": 1,
+    "left_literal": 1,
+    "right_clause": 1,
+    "right_literal": 1
+  },
+  "switches_tested": 1,
+  "upper_encoding_sha256": "03e6ab6fbcd1f2d484bfd976e1dbe791dc23f88d0274d8361e14d6ced8d11d8f",
+  "upper_solver_status": "SAT",
+  "upper_threshold": 1,
+  "upper_witness": "000000100011110101001000100001",
+  "upper_witness_deficiency": 1,
+  "variables": 30
+}

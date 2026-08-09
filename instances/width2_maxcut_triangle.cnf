@@ -1,0 +1,8 @@
+c MaxCut encoding of a triangle: beta = 3 - MaxCut(K3) = 1
+p cnf 3 6
+1 2 0
+-1 -2 0
+1 3 0
+-1 -3 0
+2 3 0
+-2 -3 0

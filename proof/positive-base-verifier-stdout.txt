@@ -1,0 +1,84 @@
+{
+  "assurance_boundary": "The C and Lean LRAT checkers certify CNF unsatisfiability. The written encoding lemma is the mathematical bridge from that CNF to bilateral deficiency; the wrapper's DIMACS parser remains part of the trusted translation boundary for the Lean run.",
+  "claim": "beta(txgraffiti_15_20.cnf) = 1",
+  "encoding_regeneration": {
+    "encoding_map_sha256": "b1dbad91b49076b1ed35d7ed2e5d3542d1c3bbb90f265692fb86a20242c508ee",
+    "encoding_sha256": "c282d2d35f66e81ae175d9afa560b9a5ded2d00f51d8b02c380d939102156c11",
+    "generator_sha256": "d80bbfc1565adbb4ed9c8b68d60a3aff14e2707485454f77da6dd80b3b943da2",
+    "input_sha256": "d6b1d133018e4237fef73c3ed895a956e23f3d588dd92206254d49dfdc742813"
+  },
+  "logical_inference": [
+    "the encoding lemma gives: CNF satisfiable iff beta(P) <= 0",
+    "the C-checked and Lean-checked LRAT derivations prove the CNF unsatisfiable",
+    "therefore beta(P) >= 1",
+    "the bilateral witness has deficiency 1, so beta(P) <= 1",
+    "therefore beta(P) = 1"
+  ],
+  "lower_bound": {
+    "direct_lrat": {
+      "checker": "third_party/drat-trim/lrat-check",
+      "checker_exit": 0,
+      "checker_reported_verified": true,
+      "lrat_checker_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+      "lrat_checker_source_sha256": "bf07c2ac96b9035da1ebcc578cb95e956a2b795629d613154cdb307f8a8f4a95",
+      "lrat_proof": "proof/positive-base-direct.lrat",
+      "lrat_proof_sha256": "61bb30cadaf1cbf4bd15662a1a97b0a6352b416a187532c887000493f46f755a",
+      "transcript": [
+        "c parsed a formula with 731 variables and 9256 clauses",
+        "c VERIFIED",
+        "c allocated 1024 210862 7310",
+        "c Added clauses = 107454.  Deleted clauses = 100406.  Max live clauses = 14788"
+      ]
+    },
+    "lean_direct_lrat": {
+      "checker": "Lean Std.Tactic.BVDecide.LRAT",
+      "checker_exit": 0,
+      "checker_reported_verified": true,
+      "lean_version": "Lean (version 4.32.1, arm64-apple-darwin24.6.0, commit f054605aea4b840552cca2e725580bffd1e1b704, Release)",
+      "lrat_proof": "proof/positive-base-direct.lrat",
+      "lrat_proof_sha256": "61bb30cadaf1cbf4bd15662a1a97b0a6352b416a187532c887000493f46f755a",
+      "transcript": [
+        "c parsed 731 variables and 9256 clauses",
+        "c parsed 118497 LRAT actions",
+        "s LEAN_LRAT_VERIFIED"
+      ],
+      "wrapper": "lean_lrat_check.lean",
+      "wrapper_sha256": "35be7df205afd936e3ab9191cf810584a6e18e0bafab45a2d0def2e45e09f9de"
+    },
+    "trimmed_lrat": {
+      "checker": "third_party/drat-trim/lrat-check",
+      "checker_exit": 0,
+      "checker_reported_verified": true,
+      "lrat_checker_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+      "lrat_checker_source_sha256": "bf07c2ac96b9035da1ebcc578cb95e956a2b795629d613154cdb307f8a8f4a95",
+      "lrat_proof": "proof/positive-base-unsat.lrat",
+      "lrat_proof_sha256": "b8fa3566bd8e1100281f7532ec7cf16918fe7329abbbb1ecd18920fcc3200370",
+      "transcript": [
+        "c parsed a formula with 731 variables and 9256 clauses",
+        "c VERIFIED",
+        "c allocated 1024 41652 7310",
+        "c Added clauses = 63433.  Deleted clauses = 63209.  Max live clauses = 9256"
+      ]
+    }
+  },
+  "upper_bound": {
+    "deficiency": 1,
+    "residual_clause_count": 12,
+    "residual_clause_indices": [
+      1,
+      3,
+      4,
+      5,
+      7,
+      8,
+      10,
+      12,
+      14,
+      15,
+      18,
+      19
+    ],
+    "unassigned_variable_count": 11,
+    "witness": "0000***********"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "bilateral-deficiency/compositional-benchmark/v1",
+  "family": "general",
+  "claimed_beta": -4,
+  "variables": 12,
+  "indexed_clauses": 8,
+  "formula_graph_order": 32,
+  "blocks": [
+    {
+      "template": "negative-unit",
+      "copies": 4,
+      "component_variables": 3,
+      "component_clauses": 2,
+      "claimed_component_beta": -1
+    }
+  ],
+  "benchmark_cnf_sha256": "ef6ade3361b3bb62b008d682cb38ecaf0a068b91c18f9f87cb04602fc32dd403",
+  "formula_graph_edgelist_sha256": "3cad14771b03310db4c9d364bf55531cbfab3ddbbf21cefdcaa3eba6dddf7ec4",
+  "proof_rule": "variable-disjoint additivity of bilateral deficiency",
+  "graph_consequence": "i(G(F))=k+beta(F)"
+}

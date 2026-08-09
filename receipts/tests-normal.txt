@@ -1,0 +1,30 @@
+test_additivity_and_multiplicative_spectrum (test_bd_core.BilateralDeficiencyTests.test_additivity_and_multiplicative_spectrum) ... ok
+test_beta_is_not_ordinary_deficiency_or_satisfiability (test_bd_core.BilateralDeficiencyTests.test_beta_is_not_ordinary_deficiency_or_satisfiability) ... ok
+test_conditional_expectation_constructs_complete_beta_witness (test_bd_core.BilateralDeficiencyTests.test_conditional_expectation_constructs_complete_beta_witness) ... ok
+test_dimacs_round_trip_preserves_indexed_duplicates (test_bd_core.BilateralDeficiencyTests.test_dimacs_round_trip_preserves_indexed_duplicates) ... ok
+test_enforcer_flip_composition_has_value_one (test_bd_core.BilateralDeficiencyTests.test_enforcer_flip_composition_has_value_one) ... ok
+test_formula_identity_allows_terminal_sign_switch (test_bd_core.BilateralDeficiencyTests.test_formula_identity_allows_terminal_sign_switch) ... ok
+test_master_bijection_and_size_polynomial_exhaustively (test_bd_core.BilateralDeficiencyTests.test_master_bijection_and_size_polynomial_exhaustively) ... ok
+test_occurrence_switch_preserves_exact_322_and_connects (test_bd_core.BilateralDeficiencyTests.test_occurrence_switch_preserves_exact_322_and_connects) ... ok
+test_owest_skeleton_and_amplifier_have_declared_structure (test_bd_core.BilateralDeficiencyTests.test_owest_skeleton_and_amplifier_have_declared_structure) ... ok
+test_paired_edge_normal_form_matches_every_assignment (test_bd_core.BilateralDeficiencyTests.test_paired_edge_normal_form_matches_every_assignment) ... ok
+test_prism_amplifier_has_declared_exact_structure (test_bd_core.BilateralDeficiencyTests.test_prism_amplifier_has_declared_exact_structure) ... ok
+test_replication_recovers_maxsat_optimum (test_bd_core.BilateralDeficiencyTests.test_replication_recovers_maxsat_optimum) ... ok
+test_residual_and_bilateral_definition (test_bd_core.BilateralDeficiencyTests.test_residual_and_bilateral_definition) ... ok
+test_structural_algorithm_signatures (test_bd_core.BilateralDeficiencyTests.test_structural_algorithm_signatures) ... ok
+test_terminal_min_plus_composition_is_exact (test_bd_core.BilateralDeficiencyTests.test_terminal_min_plus_composition_is_exact) ... ok
+test_two_lift_preserves_exact_322 (test_bd_core.BilateralDeficiencyTests.test_two_lift_preserves_exact_322) ... ok
+test_width_lift_preserves_beta (test_bd_core.BilateralDeficiencyTests.test_width_lift_preserves_beta) ... ok
+test_width_two_equals_maxsat_defect_exhaustively (test_bd_core.BilateralDeficiencyTests.test_width_two_equals_maxsat_defect_exhaustively) ... ok
+test_cleanroom_threshold_audit_and_semantic_corpus (test_workflows.WorkflowTests.test_cleanroom_threshold_audit_and_semantic_corpus) ... ok
+test_cleanroom_threshold_audit_rejects_rehashed_clause_mutation (test_workflows.WorkflowTests.test_cleanroom_threshold_audit_rejects_rehashed_clause_mutation) ... ok
+test_formula_and_graph_threshold_compilers_agree (test_workflows.WorkflowTests.test_formula_and_graph_threshold_compilers_agree) ... ok
+test_general_threshold_compiler_has_exact_boundary (test_workflows.WorkflowTests.test_general_threshold_compiler_has_exact_boundary) ... ok
+test_generated_graph_is_bound_and_corruption_is_rejected (test_workflows.WorkflowTests.test_generated_graph_is_bound_and_corruption_is_rejected) ... ok
+test_lean_terminal_signature (test_workflows.WorkflowTests.test_lean_terminal_signature) ... ok
+test_threshold_compiler_preserves_frozen_zero_encoding (test_workflows.WorkflowTests.test_threshold_compiler_preserves_frozen_zero_encoding) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 7.645s
+
+OK

@@ -1,0 +1,11 @@
+{
+  "assurance_boundary": "This finite counterexample refutes only the stronger matching-restricted conjecture. It does not settle the complexity of the proved paired-surplus normal form.",
+  "beta": -1,
+  "clauses": 12,
+  "expected_from_matching_restriction": 0,
+  "maximum_pair_feasible_matching": 3,
+  "search_sample": 8,
+  "search_seed": 20260809,
+  "status": "MATCHING_ONLY_CONJECTURE_REFUTED",
+  "variables": 9
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "evidence-press-assurance-v1",
+  "release_label": "v1.0.0-candidate",
+  "release_doi": "10.5281/zenodo.21857209",
+  "repository": "https://github.com/ipitchford/bilateral-deficiency",
+  "evidence_press_url": "https://evidencepress.org/releases/bilateral-deficiency-regular-dim/",
+  "scholarly_status": "unrefereed-candidate",
+  "parent": {
+    "doi": "10.5281/zenodo.21852504",
+    "relationship": "immutable-child-candidate"
+  },
+  "review": {
+    "journal_submission": "not-undertaken",
+    "journal_peer_review": "not-undertaken",
+    "external_specialist_review": "not-undertaken",
+    "independent_reproduction": "not-undertaken",
+    "comprehensive_novelty_review": "not-undertaken",
+    "internal_and_simulated_review_records": "present-not-external-validation"
+  },
+  "formal_verification": {
+    "level": "partial-finite-claims-only",
+    "native_and_lean_checked_threshold_encodings": 3,
+    "native_lrat_derivations": 4,
+    "lean_direct_lrat_paths": 3,
+    "lean_terminal_signature": {
+      "assignments_exhausted": 6561,
+      "claim": "exact four-entry signature of the hard-coded ten-clause enforcer",
+      "translation_boundary": "visible transcription of the ten clauses"
+    },
+    "universal_theory_formalised": false,
+    "compiler_formalised": false,
+    "boundary": "DIMACS parsing, file-to-proposition conversion, the written encoding lemma, and imported source transcription remain identified trust boundaries."
+  },
+  "cleanroom_encoding_validation": {
+    "status": "pass",
+    "scope": "producer-side implementation-separated structural reconstruction and exhaustive small-corpus semantic validation",
+    "imports_production_compiler": false,
+    "imports_bd_core": false,
+    "production_compiler_used_as_black_box_for_corpus": true,
+    "external_or_unaffiliated": false,
+    "independent_reproduction": false,
+    "receipt": "receipts/threshold-encoding-cleanroom-validation.json"
+  },
+  "claim_qualifiers": {
+    "order_50": "minimum only among finite simple cubic graphs admitting a dominating induced matching for which i(G)>mu*(G)",
+    "density_1_over_72": "sharp only within the edge-cover-amplifier construction",
+    "general_cubic_minimum": "open outside the DIM class",
+    "exact_constants": "open",
+    "priority": "bounded literature search only"
+  },
+  "artifact_layers": {
+    "core": "compact theorem-critical source, data, certificates, checkers, receipts, and documentation",
+    "extended": {
+      "filename": "beta-le-0-direct.lrat",
+      "bytes": 5793599477,
+      "sha256": "323402633cf890918c5690080279973a99fdd63fc80802d60842a958ba13db7f",
+      "required_for_universal_theorems": false
+    }
+  },
+  "licensing": {
+    "original_prose_data_figures": "CC-BY-4.0",
+    "original_code": "MIT",
+    "third_party": "upstream-terms-retained"
+  },
+  "assurance_nonimplications": [
+    "artifact hashes do not establish mathematical truth",
+    "CI and replay do not establish independent reproduction",
+    "archival publication does not establish novelty",
+    "Evidence Press publication does not constitute journal or specialist peer review"
+  ]
+}

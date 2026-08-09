@@ -1,0 +1,56 @@
+# Operating-system and editor metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+*~
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Python caches and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Compiled executables and objects
+/bd_exact
+/work-bd-exact
+/third_party/drat-trim/drat-trim
+/third_party/drat-trim/lrat-check
+/third_party/drat-trim/examples/
+*.o
+*.obj
+*.dSYM/
+
+# Local research inputs and scratch space
+/literature/
+/work/
+/tmp/
+/scratch/
+
+# Intermediate manuscript renderings; retain the designated release PDF
+/bd-typst2.pdf
+/bilateral-deficiency-manuscript.pdf
+/bilateral-deficiency-manuscript-final*.pdf
+/bilateral-deficiency-manuscript-2026-*.html
+/bilateral-deficiency-manuscript-2026-*.pdf
+/tex-chtml.js
+
+# Extended proof: archive separately, never in Git or the compact source ZIP
+/connectors/pp-beta1/beta-le-0-direct.lrat
+
+# Credentials and local deployment configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets/

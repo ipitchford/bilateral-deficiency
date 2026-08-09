@@ -1,0 +1,28 @@
+{
+  "schema": "bilateral-deficiency/compositional-benchmark/v1",
+  "family": "exact-322",
+  "claimed_beta": 0,
+  "variables": 21,
+  "indexed_clauses": 28,
+  "formula_graph_order": 70,
+  "blocks": [
+    {
+      "template": "positive-322",
+      "copies": 1,
+      "component_variables": 15,
+      "component_clauses": 20,
+      "claimed_component_beta": 1
+    },
+    {
+      "template": "negative-322",
+      "copies": 1,
+      "component_variables": 6,
+      "component_clauses": 8,
+      "claimed_component_beta": -1
+    }
+  ],
+  "benchmark_cnf_sha256": "c7160ec0c5a5c4033218469b8666eb1a58650f0c0b633a45462bd2d6805aae56",
+  "formula_graph_edgelist_sha256": "2a191c5f7cb2325e75794232a1411a331830166996b9d067f6bf87ce40e9e815",
+  "proof_rule": "variable-disjoint additivity of bilateral deficiency",
+  "graph_consequence": "for exact-322, the formula graph is cubic with a dominating induced matching, mu_star=k and i=k+beta"
+}

@@ -1,0 +1,225 @@
+{
+  "assurance_boundary": "producer-side clean-room validation of the compiler output; not external reproduction, independent expert review, proof-assistant formalisation, or a proof of the universal theory",
+  "implementation_independence": {
+    "imports_bd_core": false,
+    "imports_production_compiler": false,
+    "production_compiler_sha256": "466174c2aecc0f47004d4eab66e45b958787fed8be05eae609ece69c3148abae",
+    "production_compiler_used_as_black_box_for_corpus": true,
+    "standard_library_only": true,
+    "validator_sha256": "38ce5435544d5e4e3b41aa4e8d4b06f50775c2682de2a60e06166bbc6da9ae5c"
+  },
+  "schema": "bilateral-deficiency-threshold-cleanroom-validation-v1",
+  "semantic_corpus": {
+    "case_count": 7,
+    "cases": [
+      {
+        "case": "empty-formula",
+        "clauses": 0,
+        "exact_beta": 0,
+        "ternary_assignments_exhausted": 3,
+        "thresholds": [
+          {
+            "constrained_state_checks": 3,
+            "encoded_sat": false,
+            "encoding_clauses": 12,
+            "encoding_sha256": "23ba19dea27e444095f6aca37637d8d1e6185af8b1feb5bfca80ec3f8faef2ee",
+            "encoding_variables": 6,
+            "mathematical_threshold_truth": false,
+            "threshold": -1
+          },
+          {
+            "constrained_state_checks": 3,
+            "encoded_sat": true,
+            "encoding_clauses": 11,
+            "encoding_sha256": "a5a35d304c9738f6e1af3cbaa35cb434497a16a4e9fefb01532858ced40a3a9a",
+            "encoding_variables": 6,
+            "mathematical_threshold_truth": true,
+            "threshold": 0
+          }
+        ],
+        "variables": 1
+      },
+      {
+        "case": "positive-unit",
+        "clauses": 1,
+        "exact_beta": 0,
+        "ternary_assignments_exhausted": 3,
+        "thresholds": [
+          {
+            "constrained_state_checks": 3,
+            "encoded_sat": false,
+            "encoding_clauses": 23,
+            "encoding_sha256": "afc303223f81aefbf643da1eb5c12f0d934eaa319f9780e71af825ac96484605",
+            "encoding_variables": 10,
+            "mathematical_threshold_truth": false,
+            "threshold": -1
+          },
+          {
+            "constrained_state_checks": 3,
+            "encoded_sat": true,
+            "encoding_clauses": 22,
+            "encoding_sha256": "494b347429a741784485f10c6216b4c979e4aa70f66189995234488214cd90af",
+            "encoding_variables": 10,
+            "mathematical_threshold_truth": true,
+            "threshold": 0
+          }
+        ],
+        "variables": 1
+      },
+      {
+        "case": "empty-clause",
+        "clauses": 1,
+        "exact_beta": 1,
+        "ternary_assignments_exhausted": 3,
+        "thresholds": [
+          {
+            "constrained_state_checks": 3,
+            "encoded_sat": false,
+            "encoding_clauses": 21,
+            "encoding_sha256": "b163e845d25cb8a2bec2792cf3c2d00eccef83f710534ab04846b24c7fa8d5b8",
+            "encoding_variables": 10,
+            "mathematical_threshold_truth": false,
+            "threshold": 0
+          },
+          {
+            "constrained_state_checks": 3,
+            "encoded_sat": true,
+            "encoding_clauses": 20,
+            "encoding_sha256": "6cee694416ef9e3d1d3a1b83304206c5708d23d410f3670ab9d948840293a7d5",
+            "encoding_variables": 10,
+            "mathematical_threshold_truth": true,
+            "threshold": 1
+          }
+        ],
+        "variables": 1
+      },
+      {
+        "case": "opposite-unit-pair",
+        "clauses": 2,
+        "exact_beta": 1,
+        "ternary_assignments_exhausted": 3,
+        "thresholds": [
+          {
+            "constrained_state_checks": 3,
+            "encoded_sat": false,
+            "encoding_clauses": 38,
+            "encoding_sha256": "b549915fa5685d9e85aa11e1943f018b28bae6bd0983a98f1e56c78ba8535a91",
+            "encoding_variables": 15,
+            "mathematical_threshold_truth": false,
+            "threshold": 0
+          },
+          {
+            "constrained_state_checks": 3,
+            "encoded_sat": true,
+            "encoding_clauses": 37,
+            "encoding_sha256": "a6ae849ede852f92e9f5239aaa53aa64a3bf93e4c5bd5bb93704e5495d910e3a",
+            "encoding_variables": 15,
+            "mathematical_threshold_truth": true,
+            "threshold": 1
+          }
+        ],
+        "variables": 1
+      },
+      {
+        "case": "indexed-duplicate",
+        "clauses": 3,
+        "exact_beta": 1,
+        "ternary_assignments_exhausted": 3,
+        "thresholds": [
+          {
+            "constrained_state_checks": 3,
+            "encoded_sat": false,
+            "encoding_clauses": 60,
+            "encoding_sha256": "743266a1562b9fc5d321c46e1cb5e8a4a7249fb0efc983e99b8e5600fa25981b",
+            "encoding_variables": 21,
+            "mathematical_threshold_truth": false,
+            "threshold": 0
+          },
+          {
+            "constrained_state_checks": 3,
+            "encoded_sat": true,
+            "encoding_clauses": 59,
+            "encoding_sha256": "a1fb70797243171e48955cf8e5bcc297e080e4d031e7b013ccf0e9a281f4dc3b",
+            "encoding_variables": 21,
+            "mathematical_threshold_truth": true,
+            "threshold": 1
+          }
+        ],
+        "variables": 1
+      },
+      {
+        "case": "satisfiable-two-variable",
+        "clauses": 2,
+        "exact_beta": 0,
+        "ternary_assignments_exhausted": 9,
+        "thresholds": [
+          {
+            "constrained_state_checks": 9,
+            "encoded_sat": false,
+            "encoding_clauses": 66,
+            "encoding_sha256": "1945606e626b4631cb0de9c11f811e2c74a63c3abb9b19bcfa71b8d452144c95",
+            "encoding_variables": 23,
+            "mathematical_threshold_truth": false,
+            "threshold": -1
+          },
+          {
+            "constrained_state_checks": 9,
+            "encoded_sat": true,
+            "encoding_clauses": 65,
+            "encoding_sha256": "278e846f3305442c8f9d0f19b7a0a7d7921609284122c747eeb519e435df2c40",
+            "encoding_variables": 23,
+            "mathematical_threshold_truth": true,
+            "threshold": 0
+          }
+        ],
+        "variables": 2
+      },
+      {
+        "case": "four-polarity-square",
+        "clauses": 4,
+        "exact_beta": 1,
+        "ternary_assignments_exhausted": 9,
+        "thresholds": [
+          {
+            "constrained_state_checks": 9,
+            "encoded_sat": false,
+            "encoding_clauses": 133,
+            "encoding_sha256": "586a2a4aa4f5a478c51fa1a1cc132b8045278ff20fc2bbf821e190aa2fbf3242",
+            "encoding_variables": 38,
+            "mathematical_threshold_truth": false,
+            "threshold": 0
+          },
+          {
+            "constrained_state_checks": 9,
+            "encoded_sat": true,
+            "encoding_clauses": 132,
+            "encoding_sha256": "1d5b8657a79401df488c7d0c0d3e6deed26b5dfd67bb26ad905f57cd4a251940",
+            "encoding_variables": 38,
+            "mathematical_threshold_truth": true,
+            "threshold": 1
+          }
+        ],
+        "variables": 2
+      }
+    ],
+    "description": "For each declared formula, all 3^n partial assignments are evaluated mathematically. The production encoding is audited clause-by-clause and checked by an independent DPLL solver at q=beta-1 and q=beta, both globally and under every ternary state."
+  },
+  "status": "PASS",
+  "structural_audit": {
+    "canonical_clause_order_exact": true,
+    "clause_multiset_exact": true,
+    "encoding": "positive-base-beta-le-0.cnf",
+    "encoding_clauses": 9256,
+    "encoding_sha256": "c282d2d35f66e81ae175d9afa560b9a5ded2d00f51d8b02c380d939102156c11",
+    "encoding_variables": 731,
+    "input": "txgraffiti_15_20.cnf",
+    "input_sha256": "d6b1d133018e4237fef73c3ed895a956e23f3d588dd92206254d49dfdc742813",
+    "map": "positive-base-encoding-map.json",
+    "map_is_variable_bijection": true,
+    "map_sha256": "b1dbad91b49076b1ed35d7ed2e5d3542d1c3bbb90f265692fb86a20242c508ee",
+    "original_clauses": 20,
+    "original_variables": 15,
+    "reachable_balance_states_exact": true,
+    "threshold": 0
+  }
+}

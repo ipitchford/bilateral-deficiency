@@ -1,0 +1,16 @@
+{
+  "assurance_boundary": "Canonical labels establish graph/formula isomorphism relative to the declared coloring. They do not establish historical priority.",
+  "colored_equivalence": "variable renaming, independent variable sign switches, and indexed clause permutation",
+  "colored_formula_graph_isomorphic": false,
+  "left": "txgraffiti_15_20.cnf",
+  "left_colored_canonical_sha256": "7cfec2c7b185a660666558fb1d789731d6e5ec98ecc12ec5a607686dd3411d62",
+  "left_plain_canonical_sha256": "5849949d148561596794e8cb426f3ac0ac8aa04166a843e9df1d37cc135cb34f",
+  "left_sha256": "d6b1d133018e4237fef73c3ed895a956e23f3d588dd92206254d49dfdc742813",
+  "plain_formula_graph_isomorphic": false,
+  "right": "sat2024_enforcer_composition.cnf",
+  "right_colored_canonical_sha256": "698fc0958d419fddee9ce81a427eb1ba04e5d92ddc11785be6012a0bc137b8e6",
+  "right_plain_canonical_sha256": "4b60e4c1a8dfe687c841a1ce6de470ace4a96a1dd6547f2b1aa16c47b3e1e5cf",
+  "right_sha256": "299d316563525fc8c7a8006b41c27806d89d749e42ae54a34c716f04c9667369",
+  "same_formula_dimensions": true,
+  "schema": "bilateral-deficiency/formula-identity-audit/v1"
+}

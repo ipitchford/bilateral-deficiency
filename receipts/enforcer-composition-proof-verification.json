@@ -1,0 +1,53 @@
+{
+  "assurance_boundary": "The finite terminal source is attributed to SAT 2024. LRAT proves the regenerated threshold CNF UNSAT; the written general encoding lemma remains the bridge to bilateral deficiency.",
+  "claim": "beta(sat2024_enforcer_composition.cnf) = 1",
+  "logical_inference": [
+    "the general encoding lemma gives CNF satisfiable iff beta <= 0",
+    "native and Lean LRAT checking prove the CNF unsatisfiable",
+    "therefore beta >= 1",
+    "the explicit bilateral witness has deficiency 1",
+    "therefore beta = 1"
+  ],
+  "lower_bound": {
+    "lean_lrat": {
+      "checker": "Lean Std.Tactic.BVDecide.LRAT",
+      "lean_version": "Lean (version 4.32.1, arm64-apple-darwin24.6.0, commit f054605aea4b840552cca2e725580bffd1e1b704, Release)",
+      "proof_sha256": "aa9d8c7dd546947baf77a6d7055b068f84927d728e1713e182bf1d1f88af61c2",
+      "transcript": [
+        "c parsed 731 variables and 9256 clauses",
+        "c parsed 35737 LRAT actions",
+        "s LEAN_LRAT_VERIFIED"
+      ],
+      "verified": true,
+      "wrapper_sha256": "91d72ec9a21354ffaecefbafca4fffab9796ee851b23f7d777dee69aae9c4fb8"
+    },
+    "native_lrat": {
+      "checker": "third_party/drat-trim/lrat-check",
+      "checker_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+      "checker_source_sha256": "bf07c2ac96b9035da1ebcc578cb95e956a2b795629d613154cdb307f8a8f4a95",
+      "proof_sha256": "aa9d8c7dd546947baf77a6d7055b068f84927d728e1713e182bf1d1f88af61c2",
+      "transcript": [
+        "c parsed a formula with 731 variables and 9256 clauses",
+        "c VERIFIED",
+        "c allocated 1024 93717 7310",
+        "c Added clauses = 38045.  Deleted clauses = 34128.  Max live clauses = 9465"
+      ],
+      "verified": true
+    }
+  },
+  "regeneration": {
+    "composition_generator_sha256": "a148ec25c1054d209006efaafd428c8653c99f572daa1fb5c0d20e479e4e62b5",
+    "composition_receipt_sha256": "bce1d28ff52f5acf76d2319ae74f1c4f2a96edac8eaf36fcd3c55591a2086b60",
+    "encoding_map_sha256": "c9adb35f9b603dfb42eca8f12c23363be52dd6d50b74bc9efe508fb8e2fbfc39",
+    "encoding_sha256": "ff4d2df08aa2ea15163e8bbf25264d313432d0db4a0596b2a36ea108a48290f0",
+    "enforcer_sha256": "5b4c222ac60a2ec4f3773f8e2cb91366cb5295e11c7acc54438589d429401933",
+    "formula_sha256": "299d316563525fc8c7a8006b41c27806d89d749e42ae54a34c716f04c9667369",
+    "threshold_generator_sha256": "466174c2aecc0f47004d4eab66e45b958787fed8be05eae609ece69c3148abae"
+  },
+  "schema": "bilateral-deficiency/enforcer-composition-proof/v1",
+  "source_doi": "10.4230/LIPIcs.SAT.2024.31",
+  "upper_bound": {
+    "deficiency": 1,
+    "witness": "100*****1******"
+  }
+}

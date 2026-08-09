@@ -1,0 +1,54 @@
+{
+  "assurance_boundary": "The signature is an exhaustive receipt over 3^n local assignments. The composition theorem is a written universal argument; this JSON does not by itself certify that theorem.",
+  "clauses": 10,
+  "closed_value": 0,
+  "closed_witness": "0*****1*",
+  "entries": [
+    {
+      "masks": [
+        0
+      ],
+      "states": "*",
+      "value": 1,
+      "witness": "*****010"
+    },
+    {
+      "masks": [
+        2
+      ],
+      "states": "*",
+      "value": 1,
+      "witness": "******10"
+    },
+    {
+      "masks": [
+        0
+      ],
+      "states": "0",
+      "value": 0,
+      "witness": "0*****1*"
+    },
+    {
+      "masks": [
+        0
+      ],
+      "states": "1",
+      "value": 1,
+      "witness": "1*****10"
+    }
+  ],
+  "input": "sat2024_e322_enforcer.cnf",
+  "input_sha256": "5b4c222ac60a2ec4f3773f8e2cb91366cb5295e11c7acc54438589d429401933",
+  "mask_legend": {
+    "0": "none",
+    "1": "positive",
+    "2": "negative",
+    "3": "both"
+  },
+  "schema": "bilateral-deficiency/terminal-signature/v1",
+  "terminals": [
+    1
+  ],
+  "variables": 8,
+  "verified_closed_beta": 0
+}

@@ -1,0 +1,176 @@
+{
+  "schema": "evidence-press-claim-ledger-v1",
+  "release": {
+    "date": "2026-08-09",
+    "doi": "10.5281/zenodo.21857209",
+    "evidence_press_url": "https://evidencepress.org/releases/bilateral-deficiency-regular-dim/",
+    "label": "v1.0.0-candidate",
+    "repository": "https://github.com/ipitchford/bilateral-deficiency",
+    "scholarly_author": "Anonymous",
+    "status": "unrefereed-candidate",
+    "title": "Bilateral Deficiency: Residual SAT Optimisation and Independent Domination in Regular-DIM Graphs"
+  },
+  "lineage": {
+    "child_doi": "10.5281/zenodo.21857209",
+    "relationship": "immutable-child-candidate",
+    "parent_doi": "10.5281/zenodo.21852504",
+    "parent_release_url": "https://evidencepress.org/releases/txgraffiti-c3-resolution/"
+  },
+  "status_semantics": {
+    "asserted_in_candidate": "A claim accompanied by a written proof or the explicitly identified finite evidence. It is not a peer-review or acceptance status.",
+    "checked_finite_claim": "A finite claim whose packaged inputs and certificate or exhaustive computation have been replayed by the producer-side workflow.",
+    "formally_checked_finite_claim": "A finite proposition checked through the identified Lean path. The label does not extend to the universal theory or its file-to-proposition translation obligations.",
+    "open": "Not resolved by this candidate."
+  },
+  "claims": [
+    {
+      "id": "BD-C01",
+      "claim": "Bilateral deficiency has an intrinsic bipolar-residual formulation and is represented by a size-preserving bijection with independent dominating sets of the formula graph, including the solution-polynomial identity.",
+      "scope": "Finite indexed CNF formulas under the definitions in the manuscript.",
+      "status": "asserted_in_candidate",
+      "primary_evidence": [
+        "MANUSCRIPT.md"
+      ],
+      "formal_verification": "none",
+      "boundary": "Universal written mathematics; not proof-assistant formalised or independently reviewed."
+    },
+    {
+      "id": "BD-C02",
+      "claim": "Bilateral deficiency is additive under variable-disjoint conjunction, supports width lifting and replication, recovers the stated MaxSAT quantity under replication, and has the stated width-sensitive complexity boundary.",
+      "scope": "The constructions and decision problems exactly defined in the manuscript.",
+      "status": "asserted_in_candidate",
+      "primary_evidence": [
+        "MANUSCRIPT.md",
+        "test_bd_core.py",
+        "generated/"
+      ],
+      "formal_verification": "none",
+      "boundary": "Tests are conformance checks and do not replace the universal written proofs."
+    },
+    {
+      "id": "BD-C03",
+      "claim": "For a finite simple regular graph equipped with a dominating induced matching and its associated indexed formula, the gap satisfies i(G)-mu*(G)=beta(F).",
+      "scope": "Regular graphs equipped with a dominating induced matching, under the coordinatisation in the manuscript.",
+      "status": "asserted_in_candidate",
+      "primary_evidence": [
+        "MANUSCRIPT.md"
+      ],
+      "formal_verification": "none",
+      "boundary": "The identity is not asserted for arbitrary regular graphs without the stated DIM structure."
+    },
+    {
+      "id": "BD-C04",
+      "claim": "For every simple d-regular graph equipped with a dominating induced matching, the stated constructive replacement inequality holds; for d=3 this gives i(G) <= mu*(G)+floor(mu*(G)/6).",
+      "scope": "Finite simple d-regular graphs equipped with a dominating induced matching.",
+      "status": "asserted_in_candidate",
+      "primary_evidence": [
+        "MANUSCRIPT.md"
+      ],
+      "formal_verification": "none",
+      "boundary": "This is a written universal proof, not a formal proof-assistant result."
+    },
+    {
+      "id": "BD-C05",
+      "claim": "For every connected cubic skeleton R, the connected edge-cover amplifier A(R) satisfies beta(A(R))=rho(R)=|V(R)|-nu(R), yielding connected cubic-DIM families with linear gap and construction-specific asymptotic density 1/72 from the imported O--West equality family.",
+      "scope": "The amplifier construction in the manuscript; the 1/72 sharpness is only within this construction.",
+      "status": "asserted_in_candidate",
+      "primary_evidence": [
+        "MANUSCRIPT.md",
+        "TERMINAL_CALCULUS.md",
+        "THEOREM_DEPENDENCIES.md",
+        "generate_prism_amplifier.py",
+        "generate_owest_amplifier.py"
+      ],
+      "formal_verification": "partial-finite-terminal-lemma-only",
+      "boundary": "The universal amplifier theorem and imported matching theorem are not formalised or independently re-proved."
+    },
+    {
+      "id": "BD-C06",
+      "claim": "Order 50 is the minimum among finite simple cubic graphs admitting a dominating induced matching for which i(G)>mu*(G), and the motivating connected example attains order 50.",
+      "scope": "Cubic graphs admitting a dominating induced matching.",
+      "status": "asserted_in_candidate",
+      "primary_evidence": [
+        "MANUSCRIPT.md",
+        "THEOREM_DEPENDENCIES.md",
+        "instances/txgraffiti_15_20.cnf",
+        "receipts/txgraffiti-analysis.json"
+      ],
+      "formal_verification": "partial-finite-base-certificate-only",
+      "boundary": "No minimum-order claim is made outside the DIM class; the imported 20-clause theorem is not independently re-proved."
+    },
+    {
+      "id": "BD-C07",
+      "claim": "The motivating 15-variable, 20-clause indexed formula has bilateral deficiency exactly 1.",
+      "scope": "The byte-identified formula instances/txgraffiti_15_20.cnf.",
+      "status": "formally_checked_finite_claim",
+      "primary_evidence": [
+        "receipts/positive-base-proof-verification.json",
+        "proof/positive-base-beta-le-0.cnf",
+        "proof/positive-base-direct.lrat",
+        "proof/positive-base-unsat.lrat"
+      ],
+      "formal_verification": "Lean-checked-LRAT-unsatisfiability-plus-written-encoding-lemma-and-explicit-witness",
+      "boundary": "The DIMACS parser and file-to-proposition translation remain trusted boundaries; this does not formalise the universal definition or bijection."
+    },
+    {
+      "id": "BD-C08",
+      "claim": "The attributed SAT 2024 enforcer composition and the connected occurrence switch each have bilateral deficiency exactly 1.",
+      "scope": "The byte-identified finite formulas and threshold encodings recorded in their receipts.",
+      "status": "formally_checked_finite_claim",
+      "primary_evidence": [
+        "receipts/enforcer-composition-proof-verification.json",
+        "receipts/connected-switch-proof-verification.json",
+        "connectors/pp-beta1/LARGE_PROOF_MANIFEST.md"
+      ],
+      "formal_verification": "Lean-checked-LRAT-unsatisfiability-plus-written-encoding-lemma-and-explicit-witnesses",
+      "boundary": "The 5,793,599,477-byte connected-switch LRAT is an extended object; its absence from the compact archive does not weaken the separate written amplifier theorem."
+    },
+    {
+      "id": "BD-C09",
+      "claim": "For the visibly transcribed ten-clause enforcer, the complete finite terminal signature is exactly (0,empty,0), (1,empty,1), (*,empty,1), and (*,{-},1).",
+      "scope": "All 3^8=6,561 partial assignments of the hard-coded eight-variable clause list.",
+      "status": "formally_checked_finite_claim",
+      "primary_evidence": [
+        "lean_terminal_signature.lean",
+        "terminal_signature.py",
+        "receipts/sat2024-e322-enforcer-terminal.json"
+      ],
+      "formal_verification": "Lean-native-decision-proof-of-exact-finite-table",
+      "boundary": "The visible clause transcription is the translation boundary; the source formula and its attribution remain imported."
+    },
+    {
+      "id": "BD-C10",
+      "claim": "The packaged beta<=0 threshold encoding of the motivating formula matches an independently reconstructed symbolic encoding and passes the declared exhaustive small-formula semantic corpus.",
+      "scope": "The named encoding, map, seven-case corpus, and 66 constrained ternary-state checks in the receipt.",
+      "status": "checked_finite_claim",
+      "primary_evidence": [
+        "verify_threshold_encoding_cleanroom.py",
+        "receipts/threshold-encoding-cleanroom-validation.json"
+      ],
+      "formal_verification": "none",
+      "boundary": "This is producer-side clean-room validation, not independent reproduction, external review, or proof-assistant verification of the compiler."
+    }
+  ],
+  "open_claims": [
+    {
+      "id": "BD-O01",
+      "claim": "Determine the exact cubic-DIM extremal constants.",
+      "status": "open"
+    },
+    {
+      "id": "BD-O02",
+      "claim": "Determine the sign complexity on proper simple exact signed-occurrence (3,2,2)-CNF.",
+      "status": "open"
+    },
+    {
+      "id": "BD-O03",
+      "claim": "Classify all order-50 cubic-DIM extremisers.",
+      "status": "open"
+    },
+    {
+      "id": "BD-O04",
+      "claim": "Determine the minimum counterexample order among cubic graphs outside the DIM class.",
+      "status": "open"
+    }
+  ]
+}

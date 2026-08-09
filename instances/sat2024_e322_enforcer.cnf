@@ -1,0 +1,16 @@
+c E_(3,2,2) from Zhang, Peitl, Szeider, SAT 2024, Appendix A.1
+c DOI 10.4230/LIPIcs.SAT.2024.31
+c Rows are variables and columns are clauses in the published matrix.
+c Distinguished variable 1 occurs negatively twice and is forced false
+c in every satisfying complete assignment.
+p cnf 8 10
+-1 -4 -8 0
+-2 -6 -8 0
+-1 -6 8 0
+-4 -7 8 0
+-3 -5 7 0
+-2 5 6 0
+-3 4 -7 0
+3 -5 6 0
+2 5 7 0
+2 3 4 0

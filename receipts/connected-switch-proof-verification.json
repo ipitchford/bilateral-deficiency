@@ -1,0 +1,94 @@
+{
+  "assurance_boundary": "The occurrence switch and upper witness are checked against the independent formula semantics. LRAT proves the regenerated threshold CNF UNSAT; the written encoding lemma remains the bridge to beta > 0.",
+  "claim": "beta(connected-switch.cnf) = 1",
+  "encoding": {
+    "encoding_map_sha256": "84793f3c2e5773bee476342c182b598a1acb653b58905f7c09531ec8e026b823",
+    "encoding_sha256": "54493aeb68ecd3d276cbf73765ef6c727275fc71e7a84ad195cdb1d0d8830c9d",
+    "generator_sha256": "466174c2aecc0f47004d4eab66e45b958787fed8be05eae609ece69c3148abae",
+    "regenerated_byte_identical": true
+  },
+  "formula_and_upper_bound": {
+    "audit": {
+      "connected_formula_graph": true,
+      "exact_322": true,
+      "proper": true,
+      "simple": true
+    },
+    "clauses": 40,
+    "formula_sha256": "83fe2bf036979a45aaea5f186feaa05a44eb67a1b44883d9c1fae9e4f2c947b3",
+    "positive_base_sha256": "d6b1d133018e4237fef73c3ed895a956e23f3d588dd92206254d49dfdc742813",
+    "switch": {
+      "left_clause": 1,
+      "left_literal": 1,
+      "right_clause": 1,
+      "right_literal": 1
+    },
+    "variables": 30,
+    "witness": "000000100011110101001000100001",
+    "witness_deficiency": 1
+  },
+  "logical_inference": [
+    "the explicit bilateral witness proves beta <= 1",
+    "the general encoding lemma gives CNF satisfiable iff beta <= 0",
+    "native and Lean LRAT checking prove the CNF unsatisfiable",
+    "therefore beta >= 1",
+    "therefore beta = 1"
+  ],
+  "lower_bound": {
+    "lean_lrat": {
+      "checker": "Lean Std.Tactic.BVDecide.LRAT",
+      "lean_version": "Lean (version 4.32.1, arm64-apple-darwin24.6.0, commit f054605aea4b840552cca2e725580bffd1e1b704, Release)",
+      "proof_sha256": "323402633cf890918c5690080279973a99fdd63fc80802d60842a958ba13db7f",
+      "transcript": [
+        "c parsed 2686 variables and 65061 clauses",
+        "c parsed 11393023 LRAT actions",
+        "s LEAN_LRAT_VERIFIED"
+      ],
+      "verified": true,
+      "wrapper_sha256": "91d72ec9a21354ffaecefbafca4fffab9796ee851b23f7d777dee69aae9c4fb8"
+    },
+    "native_lrat": {
+      "checker": "third_party/drat-trim/lrat-check",
+      "checker_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+      "checker_source_sha256": "bf07c2ac96b9035da1ebcc578cb95e956a2b795629d613154cdb307f8a8f4a95",
+      "proof_bytes": 5793599477,
+      "proof_sha256": "323402633cf890918c5690080279973a99fdd63fc80802d60842a958ba13db7f",
+      "transcript": [
+        "c parsed a formula with 2686 variables and 65061 clauses",
+        "c WARNING hint already satisfied in lemma with index 3552381",
+        "c WARNING hint already satisfied in lemma with index 7816856",
+        "c WARNING hint already satisfied in lemma with index 7816856",
+        "c WARNING hint already satisfied in lemma with index 7816856",
+        "c topTable reallocation from 1024 to 1536",
+        "c increasing the number of buckets from 1024 to 1536",
+        "c WARNING hint already satisfied in lemma with index 9475297",
+        "c WARNING hint already satisfied in lemma with index 9475298",
+        "c WARNING hint already satisfied in lemma with index 9475299",
+        "c WARNING hint already satisfied in lemma with index 10235213",
+        "c WARNING hint already satisfied in lemma with index 10235214",
+        "c WARNING hint already satisfied in lemma with index 10235214",
+        "c WARNING hint already satisfied in lemma with index 10235215",
+        "c WARNING hint already satisfied in lemma with index 10235215",
+        "c WARNING hint already satisfied in lemma with index 10235216",
+        "c WARNING hint already satisfied in lemma with index 10235216",
+        "c WARNING hint already satisfied in lemma with index 10235217",
+        "c WARNING hint already satisfied in lemma with index 10235217",
+        "c WARNING hint already satisfied in lemma with index 10235218",
+        "c WARNING hint already satisfied in lemma with index 10235218",
+        "c WARNING hint already satisfied in lemma with index 10235219",
+        "c WARNING hint already satisfied in lemma with index 10235219",
+        "c WARNING hint already satisfied in lemma with index 10235220",
+        "c WARNING hint already satisfied in lemma with index 10235220",
+        "c WARNING hint already satisfied in lemma with index 10235221",
+        "c WARNING hint already satisfied in lemma with index 10235221",
+        "c WARNING hint already satisfied in lemma with index 10235222",
+        "c WARNING hint already satisfied in lemma with index 10235222",
+        "c VERIFIED",
+        "c allocated 1536 3334873 90652",
+        "c Added clauses = 10252132.  Deleted clauses = 10170575.  Max live clauses = 228042"
+      ],
+      "verified": true
+    }
+  },
+  "schema": "bilateral-deficiency/connected-switch-proof/v1"
+}

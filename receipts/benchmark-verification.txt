@@ -1,0 +1,41 @@
+{
+  "status": "COMPOSITIONAL_BENCHMARK_VERIFIED",
+  "family": "exact-322",
+  "beta": 0,
+  "template_receipts": {
+    "positive-322": 1,
+    "negative-322": -1
+  },
+  "variables": 21,
+  "indexed_clauses": 28
+}
+{
+  "status": "COMPOSITIONAL_BENCHMARK_VERIFIED",
+  "family": "exact-322",
+  "beta": 3,
+  "template_receipts": {
+    "positive-322": 1
+  },
+  "variables": 45,
+  "indexed_clauses": 60
+}
+{
+  "status": "COMPOSITIONAL_BENCHMARK_VERIFIED",
+  "family": "exact-322",
+  "beta": -2,
+  "template_receipts": {
+    "negative-322": -1
+  },
+  "variables": 12,
+  "indexed_clauses": 16
+}
+{
+  "status": "COMPOSITIONAL_BENCHMARK_VERIFIED",
+  "family": "general",
+  "beta": -4,
+  "template_receipts": {
+    "negative-unit": -1
+  },
+  "variables": 12,
+  "indexed_clauses": 8
+}

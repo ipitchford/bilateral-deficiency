@@ -1,0 +1,31 @@
+{
+  "variables": 15,
+  "indexed_clauses": 20,
+  "maximum_width": 3,
+  "incidence_graph_is_forest": false,
+  "regular_dim_degree": 3,
+  "formula_graph_order": 50,
+  "recommendations": [
+    {
+      "method": "exact ternary enumeration",
+      "reason": "the complete search has 3^15 partial assignments"
+    },
+    {
+      "method": "formula-graph independent-domination branch-and-reduce",
+      "reason": "the size-preserving bijection gives i(G(F))=k+beta(F)"
+    },
+    {
+      "method": "general SAT/MILP/branch-and-bound with proof logging",
+      "reason": "the sign problem is NP-hard already for exact width three"
+    }
+  ],
+  "beta": 1,
+  "solver_used": "cpp-exhaustive-ternary-receipt",
+  "regular_dim_classification": {
+    "degree": 3,
+    "mu_star": 15,
+    "independent_domination": 16,
+    "gap_i_minus_mu_star": 1,
+    "violates_i_le_mu_star": true
+  }
+}

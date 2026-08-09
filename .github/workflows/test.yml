@@ -1,0 +1,51 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: test-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Run Python tests
+        run: |
+          python3 -m unittest discover -v
+          python3 -O -m unittest discover -v
+
+      - name: Build and sample the exact C++ solver
+        run: |
+          c++ -std=c++17 -O2 -Wall -Wextra -pedantic bd_exact.cpp -o bd_exact
+          ./bd_exact instances/txgraffiti_15_20.cnf
+
+      - name: Validate the frozen threshold encoding
+        run: |
+          python3 verify_threshold_encoding_cleanroom.py \
+            instances/txgraffiti_15_20.cnf \
+            proof/positive-base-beta-le-0.cnf \
+            proof/positive-base-encoding-map.json \
+            --receipt /tmp/threshold-cleanroom.json
+
+      - name: Replay compact LRAT certificates natively
+        run: |
+          make -C third_party/drat-trim lrat-check drat-trim
+          python3 verify_positive_base_proof.py \
+            --skip-lean \
+            --receipt /tmp/positive-base-proof.json
+          python3 verify_enforcer_composition_proof.py \
+            --skip-lean \
+            --receipt /tmp/enforcer-composition-proof.json

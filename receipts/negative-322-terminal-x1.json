@@ -1,0 +1,70 @@
+{
+  "assurance_boundary": "The signature is an exhaustive receipt over 3^n local assignments. The composition theorem is a written universal argument; this JSON does not by itself certify that theorem.",
+  "clauses": 8,
+  "closed_value": -1,
+  "closed_witness": "1***00",
+  "entries": [
+    {
+      "masks": [
+        0
+      ],
+      "states": "*",
+      "value": 0,
+      "witness": "*01011"
+    },
+    {
+      "masks": [
+        1
+      ],
+      "states": "*",
+      "value": 1,
+      "witness": "****00"
+    },
+    {
+      "masks": [
+        2
+      ],
+      "states": "*",
+      "value": 1,
+      "witness": "**0*1*"
+    },
+    {
+      "masks": [
+        3
+      ],
+      "states": "*",
+      "value": 1,
+      "witness": "***01*"
+    },
+    {
+      "masks": [
+        0
+      ],
+      "states": "0",
+      "value": 0,
+      "witness": "0***11"
+    },
+    {
+      "masks": [
+        0
+      ],
+      "states": "1",
+      "value": -1,
+      "witness": "1***00"
+    }
+  ],
+  "input": "negative_322.cnf",
+  "input_sha256": "a933edd15cb35fc7aa87de8858d109c852ed3fcea07128c1cf5183f43d48cf23",
+  "mask_legend": {
+    "0": "none",
+    "1": "positive",
+    "2": "negative",
+    "3": "both"
+  },
+  "schema": "bilateral-deficiency/terminal-signature/v1",
+  "terminals": [
+    1
+  ],
+  "variables": 6,
+  "verified_closed_beta": -1
+}

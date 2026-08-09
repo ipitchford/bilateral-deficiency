@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "Please cite the archived manuscript and software artifact together."
+title: "Bilateral Deficiency: Residual SAT Optimisation and Independent Domination in Regular-DIM Graphs"
+type: software
+authors:
+  - family-names: "Anonymous"
+version: "1.0.0-candidate"
+date-released: "2026-08-09"
+doi: "10.5281/zenodo.21857209"
+repository-code: "https://github.com/ipitchford/bilateral-deficiency"
+url: "https://evidencepress.org/releases/bilateral-deficiency-regular-dim/"
+license: "MIT"
+keywords:
+  - "CNF deficiency"
+  - "partial assignment"
+  - "independent domination"
+  - "dominating induced matching"
+  - "MaxSAT"
+  - "parameterized complexity"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21857209"
+    description: "Archived candidate release"
+abstract: >-
+  Bilateral deficiency is defined as the minimum deficiency of a bipolar
+  residual restriction. The manuscript proves a size-preserving bijection
+  with independent dominating sets, develops its algebra and fixed-width
+  complexity, and shows that it is the exact gap coordinate for regular graphs
+  equipped with a dominating induced matching. The candidate is unrefereed.
+preferred-citation:
+  type: article
+  title: "Bilateral Deficiency: Residual SAT Optimisation and Independent Domination in Regular-DIM Graphs"
+  authors:
+    - family-names: "Anonymous"
+  doi: "10.5281/zenodo.21857209"
+  year: 2026
+  version: "1.0.0-candidate"
+  notes: >-
+    Unrefereed candidate. Original manuscript, data, and figures are CC BY 4.0;
+    original software is MIT licensed; third-party material retains its
+    upstream terms.
